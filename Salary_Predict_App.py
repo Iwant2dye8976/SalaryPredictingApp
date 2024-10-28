@@ -34,7 +34,7 @@ train_model = "Linear Regression" if model_type=="Linear Regression" else "Lasso
 model = models[train_model]
 
 # Nút dự đoán
-if st.button('Dự đoán ngay🫵🫵'):
+if st.button('Dự đoán'):
     # Chuẩn bị dữ liệu đầu vào
     input_data = pd.DataFrame([[age, years_of_experience, master, phd, gender_male]], 
                               columns=['Age', 'Years of Experience', "Education Level_Master's", "Education Level_PhD", 'Gender_Male'])
